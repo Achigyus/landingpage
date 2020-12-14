@@ -228,14 +228,15 @@ html{
 section{
     padding: 100px 0;
 }
-.about, .services, .skills, .portfolio, .teams, .contact, footer{
+.about, .services, .skills, .portfolio, .teams, .contact, .video, footer{
     font-family: 'Poppins', sans-serif;
 }
 .home .home-content,
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.video .video-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -274,7 +275,7 @@ section .title::after{
 
 /* about section styles */
 .about .title::after{
-    content: "who i am";
+    content: "who we are";
 }
 .about .about-content .left{
     width: 45%;
@@ -452,6 +453,24 @@ section .title::after{
     background: none;
 }
 
+/* video section styles */
+.video .title::after{
+    content: "enjoy";
+}
+.video .video-content .column{
+    width: calc(50% - 30px);
+}
+.video .video-content .right iframe{
+    width: 100%;
+}
+.video .video-content .left span{
+    color: crimson;
+    font-weight: 500;
+}
+.video .video-content .left p{
+    text-align: justify;
+}
+
 /* footer section styles */
 footer{
     background: #111;
@@ -576,10 +595,14 @@ footer span a:hover{
         max-width: 800px;
     }
     .about .about-content .column,
-    .home .home-content .column{
+    .home .home-content .column,
+    .video .video-content .column{
         width: 100%;
     }
     .home .home-content .right{
+        margin-top: 20px;
+    }
+    .video .video-content .right{
         margin-top: 20px;
     }
     .about .about-content .left{
