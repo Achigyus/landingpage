@@ -23,6 +23,14 @@ $(document).ready(function(){
         $(' .menu-btn i').toggleClass("active");
     });
 
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["FrontEnd Development", "Freelancing", "Blogging", "Designing", "Advertising"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -45,3 +53,4 @@ $(document).ready(function(){
         }
     });
 });
+//<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>

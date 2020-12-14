@@ -103,7 +103,7 @@ html{
 /* home styles */
 .home{
     display: flex;
-    background: url(./hacker-working-darkness-resize.jpg) no-repeat center fixed;
+    background: url(./3d-digital-background-with-golden-flowing-cyber-dots-resize.jpg) no-repeat center fixed;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -114,6 +114,11 @@ html{
 .home .max-width {
     margin: auto 0 auto 40px;
     width: 100%;
+}
+.home .home-content .right{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 6px;
 }
 .home .home-content{
     display: flex;
